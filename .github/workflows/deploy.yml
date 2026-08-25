@@ -1,0 +1,67 @@
+name: deploy
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: deploy-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  BORIS_COMMIT: a8ef247eca407384081ac9d016981df5caa3087f
+  ZIG_VERSION: 0.16.0
+  SITE_URL: https://squirrel.filed.fyi/
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout site
+        uses: actions/checkout@v4
+
+      - name: Checkout boris at pinned commit
+        uses: actions/checkout@v4
+        with:
+          repository: drawmeanelephant/boris
+          ref: ${{ env.BORIS_COMMIT }}
+          path: boris-src
+
+      - name: Install Zig ${{ env.ZIG_VERSION }}
+        run: |
+          case "$(uname -m)" in
+            x86_64) ZIG_ARCH=x86_64 ;;
+            aarch64 | arm64) ZIG_ARCH=aarch64 ;;
+            *) echo "unsupported arch: $(uname -m)" >&2; exit 1 ;;
+          esac
+          curl --fail --silent --show-error --location --output /tmp/zig.tar.xz \
+            "https://ziglang.org/download/${ZIG_VERSION}/zig-linux-${ZIG_ARCH}-${ZIG_VERSION}.tar.xz"
+          mkdir -p /tmp/zig
+          tar -xJf /tmp/zig.tar.xz --strip-components=1 -C /tmp/zig
+          echo "/tmp/zig" >> "$GITHUB_PATH"
+
+      - name: Build boris
+        run: |
+          cd boris-src
+          zig build
+          BIN="$(find zig-out -type f -name boris | head -n1)"
+          test -n "$BIN" || { echo "boris binary not found after build" >&2; exit 1; }
+          "$BIN" --version
+          echo "BORIS_BIN=$GITHUB_WORKSPACE/boris-src/$BIN" >> "$GITHUB_ENV"
+
+      - name: Build site
+        run: |
+          "$BORIS_BIN" build --input content --html-dir dist \
+            --theme lab --sitemap --site-url "$SITE_URL"
+          test -f dist/index.html
+
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy dist --project-name=${{ vars.CF_PAGES_PROJECT || 'squirrel-filed-fyi' }}

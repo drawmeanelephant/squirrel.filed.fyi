@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{title}} · squirrel.filed.fyi</title>
+  <link rel="stylesheet" href="{{asset-url assets/css/lab.css}}">
+  <link rel="stylesheet" href="{{asset-url assets/css/modes.css}}">
+  {{head}}
+</head>
+<body>
+<header class="site-header">
+  <div class="masthead">
+    <p class="site-title">squirrel<span class="x">.</span>filed.fyi</p>
+    <div class="masthead-controls">
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Cycle color theme">☾ dark</button>
+      <div class="search" id="search-root">
+        <input type="search" id="search-input" placeholder="Search the graph  ( / )"
+               autocomplete="off" spellcheck="false" aria-label="Search pages">
+        <div class="search-results" id="search-results" hidden></div>
+      </div>
+    </div>
+  </div>
+</header>
+<main class="site-body">
+  <div class="site-breadcrumb">{{breadcrumb}}</div>
+  <div class="site-cols">
+    <aside class="site-rail">
+      <nav class="treewrap">{{nav}}</nav>
+      <aside class="site-toc">{{toc}}</aside>
+    </aside>
+    <article class="site-content">
+      {{content}}
+      <section class="graph-panel">
+        <div class="gp-block" id="gp-relations"><p class="gp-title">relations</p>{{relations}}</div>
+        <div class="gp-block" id="gp-children"><p class="gp-title">children</p>{{children}}</div>
+        <div class="gp-block" id="gp-backlinks"><p class="gp-title">backlinks</p>{{backlinks}}</div>
+      </section>
+    </article>
+  </div>
+</main>
+<footer class="site-footer">{{footer}}</footer>
+<script src="{{asset-url assets/js/search.js}}" defer></script>
+<script src="{{asset-url assets/js/theme.js}}" defer></script>
+</body>
+</html>
