@@ -3,6 +3,7 @@ title: Rotkeeper
 parent: log/index
 tags: [link, meta]
 status: published
+published_at: 2026-08-25T12:00:00Z
 summary: My own Bash-native static publishing toolchain — filed and promoted to Development with a full explain page.
 relations: [relates_to=dev/rotkeeper]
 ---

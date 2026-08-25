@@ -3,6 +3,7 @@ title: DEVONtechnologies
 parent: log/index
 tags: [link, mac]
 status: published
+published_at: 2026-08-25T12:00:00Z
 summary: German shop behind DEVONthink — filed to the Mac shelf as a stub pending usage notes.
 relations: [relates_to=mac/devontechnologies]
 ---

@@ -3,6 +3,7 @@ title: Default Folder X
 parent: log/index
 tags: [link, mac]
 status: published
+published_at: 2026-08-25T12:00:00Z
 summary: St. Clair Software's Open/Save dialog enhancer — liked for 25 years, promoted to the Mac shelf.
 relations: [relates_to=mac/default-folder-x]
 ---

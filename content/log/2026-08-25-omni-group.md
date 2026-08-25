@@ -3,6 +3,7 @@ title: The Omni Group
 parent: log/index
 tags: [link, mac]
 status: published
+published_at: 2026-08-25T12:00:00Z
 summary: Thirty years of Mac productivity software — filed to the Mac shelf; OmniWeb got its own page because it earned one.
 relations: [relates_to=mac/omni-group]
 ---

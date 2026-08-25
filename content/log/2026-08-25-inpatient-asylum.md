@@ -3,6 +3,7 @@ title: Inpatient (Ren x Chris Webby) — Asylum, full album
 parent: log/index
 tags: [link, music]
 status: published
+published_at: 2026-08-25T12:00:00Z
 summary: Asylum, the Inpatient album — Ren and Chris Webby's 15-track, 15-video concept record. Rabbit hole follows.
 ---
 

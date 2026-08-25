@@ -41,11 +41,21 @@ Core commands (run from repo root):
 
 ```sh
 # full build: HTML + search index + sitemap into dist/
+# (trunk layout rule keeps the homepage <title> free of the site suffix)
 ./boris-agent-kit/bin/boris build --input content --html-dir dist \
-  --theme lab --sitemap --site-url https://squirrel.filed.fyi/
+  --theme lab --sitemap --site-url https://squirrel.filed.fyi/ \
+  --layout-rule default id:index lab/layouts/trunk.html
+
+# RSS feed — separate mode, run after the HTML build.
+# Items require `status: published` + `summary` + `published_at`.
+./boris-agent-kit/bin/boris build --input content --rss --rss-path dist/rss.xml \
+  --site-url https://squirrel.filed.fyi/ \
+  --rss-title "squirrel.filed.fyi" \
+  --rss-description "Links, Mac software, AI reviews, and relics — filed, not forgotten."
 
 # zero-write preflight — run this before declaring any task done
-./boris-agent-kit/bin/boris validate --input content --theme lab
+./boris-agent-kit/bin/boris validate --input content --theme lab \
+  --layout-rule default id:index lab/layouts/trunk.html
 
 # read-only graph health report
 ./boris-agent-kit/bin/boris check --input content
@@ -64,7 +74,7 @@ and cannot be combined with HTML flags in one invocation.
 
 ## Content rules (hard)
 
-Frontmatter accepts **exactly six keys** — anything else fails the
+Frontmatter accepts **exactly seven keys** — anything else fails the
 build with `EFRONTMATTER`. This was verified empirically; do not invent
 keys.
 
@@ -74,7 +84,8 @@ keys.
 | `parent` | satellites | entity id of parent page, e.g. `log/index` |
 | `tags` | recommended | YAML list |
 | `status` | recommended | exactly `draft`, `published`, or `archived` |
-| `summary` | recommended | one sentence, used by listings/search |
+| `summary` | recommended | one sentence, used by listings/search/RSS |
+| `published_at` | feed pages | exactly `YYYY-MM-DDTHH:MM:SSZ`; required for RSS eligibility |
 | `relations` | optional | e.g. `[relates_to=reviews/index]` |
 
 More rules:

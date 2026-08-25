@@ -18,7 +18,8 @@ compiler with a validated page graph, deployed to Cloudflare Pages.
 
 ```sh
 ./boris-agent-kit/bin/boris build --input content --html-dir dist \
-  --theme lab --sitemap --site-url https://squirrel.filed.fyi/
+  --theme lab --sitemap --site-url https://squirrel.filed.fyi/ \
+  --layout-rule default id:index lab/layouts/trunk.html
 ```
 
 Or watch + serve on loopback:

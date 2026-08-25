@@ -1,14 +1,43 @@
 ---
 title: squirrel.filed.fyi
 tags: [home]
-summary: A filing cabinet for links, AI software reviews, and whatever else needs a bucket.
+summary: A filing cabinet for links, Mac software, AI reviews, and dead software that deserves a headstone.
 ---
 
-# squirrel.filed.fyi
+<figure class="venn">
+<svg viewBox="0 0 800 800" role="img" aria-label="Four-set Venn diagram: undiagnosed ADHD, undiagnosed autism, undiagnosed cannabis use disorder, and undiagnosed AI psychosis. The intersection in the center is squirrel dot filed dot fyi.">
+<g font-family="ui-monospace, 'SF Mono', Menlo, monospace">
+<ellipse cx="400" cy="400" rx="300" ry="105" transform="rotate(0 400 400)" fill="#5eead4" fill-opacity="0.09" stroke="#5eead4" stroke-opacity="0.5" stroke-width="1.5"/>
+<ellipse cx="400" cy="400" rx="300" ry="105" transform="rotate(45 400 400)" fill="#f0abfc" fill-opacity="0.09" stroke="#f0abfc" stroke-opacity="0.5" stroke-width="1.5"/>
+<ellipse cx="400" cy="400" rx="300" ry="105" transform="rotate(90 400 400)" fill="#7dd3fc" fill-opacity="0.09" stroke="#7dd3fc" stroke-opacity="0.5" stroke-width="1.5"/>
+<ellipse cx="400" cy="400" rx="300" ry="105" transform="rotate(135 400 400)" fill="#fbbf24" fill-opacity="0.09" stroke="#fbbf24" stroke-opacity="0.5" stroke-width="1.5"/>
+<g fill="var(--ink, #c9d4de)" font-size="21" text-anchor="middle">
+<text x="400" y="148">undiagnosed</text>
+<text x="400" y="174">ADHD</text>
+<text x="648" y="394">undiagnosed</text>
+<text x="648" y="420">autism</text>
+<text x="400" y="640">undiagnosed cannabis</text>
+<text x="400" y="666">use disorder</text>
+<text x="152" y="394">undiagnosed</text>
+<text x="152" y="420">AI psychosis</text>
+</g>
+<g fill="var(--bright, #eef4fa)" font-size="31" font-weight="700" text-anchor="middle" letter-spacing="1">
+<text x="400" y="336">squirrel</text>
+<text x="400" y="368">dot</text>
+<text x="400" y="400">filed</text>
+<text x="400" y="432">dot</text>
+<text x="400" y="464">fyi</text>
+</g>
+</g>
+</svg>
+<figcaption>the intersection is the content strategy</figcaption>
+</figure>
 
-Links come in from friends and from me. They get filed into buckets,
-sometimes reviewed, occasionally written up at length. That's the whole
-system.
+Where links go when nobody else would take them. Friends send things;
+agents triage; the good stuff gets filed and the stupid stuff gets filed
+harder. Mac software gets defended. AI tools get reviewed only after
+they've been actually used. Dead software gets a headstone with its name
+spelled right.
 
 ## Buckets
 
@@ -22,7 +51,6 @@ system.
 
 ## How filing works
 
-Every link lands in the [[log/index]] first as a draft. If it deserves
-its own page — a real writeup or a review — it gets promoted into the
-right bucket and cross-linked back to its log entry. Agents do the
-triage; rules live in AGENTS.md at the repo root.
+Everything lands in [[log/index]] first as a draft. If it deserves its
+own page it gets promoted into the right bucket and cross-linked back.
+Agents do the triage; rules live in AGENTS.md at the repo root.

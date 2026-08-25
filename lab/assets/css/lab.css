@@ -113,6 +113,8 @@ body {
 .site-content :is(h4,h5,h6) { color: var(--ink); scroll-margin-top: 1rem; }
 .site-content a { color: var(--accent); }
 .site-content a:hover { text-decoration: underline; }
+.site-content a[href^="http"]::after { content: " ↗"; color: var(--muted); font-size: .8em; }
+.graph-panel a[href^="http"]::after, .site-footer a[href^="http"]::after { content: none; }
 .site-content strong { color: var(--bright); }
 .site-content img { max-width: 100%; height: auto; border: 1px solid var(--rule); border-radius: 8px; background: #fff; padding: .35rem; }
 
@@ -135,6 +137,11 @@ section.footnotes { color: var(--muted); font-size: .88rem; border-top: 1px dash
 sup.footnote-ref a { text-decoration: none; }
 
 mark { background: var(--mark); color: var(--bright); }
+
+/* ---------- homepage venn ---------- */
+.venn { margin: 1rem auto 2.25rem; max-width: 33rem; }
+.venn svg { width: 100%; height: auto; display: block; }
+.venn figcaption { font-family: var(--mono); font-size: .74rem; color: var(--muted); text-align: center; margin-top: .35rem; letter-spacing: .04em; }
 
 /* ---------- boris components ---------- */
 .admonition { border: 1px solid var(--rule); border-left: 3px solid var(--accent); border-radius: 8px; background: var(--panel); padding: .65rem 1rem .75rem; margin: 1.25rem 0; }

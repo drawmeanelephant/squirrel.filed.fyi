@@ -3,6 +3,7 @@ title: Boris agent kit
 parent: log/index
 tags: [link, meta]
 status: published
+published_at: 2026-08-25T12:00:00Z
 summary: The build kit for this very site — first real entry in the log, filed so the pipeline has a shape to copy.
 relations: [relates_to=reviews/index]
 ---
