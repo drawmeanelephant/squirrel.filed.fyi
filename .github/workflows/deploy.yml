@@ -34,12 +34,17 @@ jobs:
       - name: Install Zig ${{ env.ZIG_VERSION }}
         run: |
           case "$(uname -m)" in
-            x86_64) ZIG_ARCH=x86_64 ;;
-            aarch64 | arm64) ZIG_ARCH=aarch64 ;;
+            x86_64) ZIG_TARGET=x86_64-linux ;;
+            aarch64 | arm64) ZIG_TARGET=aarch64-linux ;;
             *) echo "unsupported arch: $(uname -m)" >&2; exit 1 ;;
           esac
-          curl --fail --silent --show-error --location --output /tmp/zig.tar.xz \
-            "https://ziglang.org/download/${ZIG_VERSION}/zig-linux-${ZIG_ARCH}-${ZIG_VERSION}.tar.xz"
+          # resolve the exact tarball from ziglang.org's index — artifact
+          # naming changed across Zig releases, the index is the contract
+          curl --fail --silent --show-error --location --output /tmp/zig-index.json \
+            "https://ziglang.org/download/index.json"
+          URL="$(python3 -c "import json; print(json.load(open('/tmp/zig-index.json'))['${ZIG_VERSION}']['${ZIG_TARGET}']['tarball'])")"
+          echo "zig tarball: $URL"
+          curl --fail --silent --show-error --location --output /tmp/zig.tar.xz "$URL"
           mkdir -p /tmp/zig
           tar -xJf /tmp/zig.tar.xz --strip-components=1 -C /tmp/zig
           echo "/tmp/zig" >> "$GITHUB_PATH"
