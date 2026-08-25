@@ -91,6 +91,9 @@ keys.
 More rules:
 
 - Wiki links are `[[path/to/page]]`; external links are normal markdown.
+- Raw HTML in pages is passed through, but a blank line inside an HTML
+  block ends it — following indented lines become a code block. Keep
+  embedded HTML (e.g. inline SVG) free of blank lines.
 - Draft pages render to HTML but are excluded from nav, search, sitemap,
   RSS, and publication. Draft is the default state for triaged links.
 - Page images go in `<stem>.assets/` beside the owning page.
