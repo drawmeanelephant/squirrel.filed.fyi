@@ -2,11 +2,14 @@
 title: myCat — Desktop Cat Companion
 parent: tech/index
 tags: [desktop-pet, python, qt, fun, ai, ollama]
-status: draft
+status: published
 summary: A transparent animated desktop cat with Ollama chat, Stable Diffusion character creation, and banner-plane reminders. Python + PySide6, cross-platform, pure joy.
+relations: [relates_to=log/2026-08-25-mycat]
 ---
 
 # myCat
+
+Filed from [[log/2026-08-25-mycat]].
 
 ## What it claims to be
 
