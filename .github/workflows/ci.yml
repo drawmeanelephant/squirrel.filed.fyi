@@ -1,0 +1,59 @@
+name: CI
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: Validate content
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ./.github/actions/setup-boris
+      - name: Validate
+        run: boris validate --input content --theme lab --layout-rule default id:index lab/layouts/trunk.html
+
+  build:
+    name: Build site
+    runs-on: ubuntu-latest
+    needs: validate
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ./.github/actions/setup-boris
+      - name: Build HTML
+        run: |
+          boris build --input content --html-dir dist \
+            --theme lab --sitemap --site-url https://squirrel.filed.fyi/ \
+            --layout-rule default id:index lab/layouts/trunk.html
+      - name: Build RSS
+        run: |
+          boris build --input content --rss --rss-path dist/rss.xml \
+            --site-url https://squirrel.filed.fyi/ \
+            --rss-title "squirrel.filed.fyi" \
+            --rss-description "Links, Mac software, AI reviews, and relics — filed, not forgotten."
+      - name: Check graph health
+        run: boris check --input content
+
+  check-dist:
+    name: Verify dist output
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ./.github/actions/setup-boris
+      - name: Rebuild to verify reproducibility
+        run: |
+          boris build --input content --html-dir dist \
+            --theme lab --sitemap --site-url https://squirrel.filed.fyi/ \
+            --layout-rule default id:index lab/layouts/trunk.html
+      - name: Check dist has content
+        run: |
+          COUNT=$(find dist -name '*.html' | wc -l)
+          echo "Generated $COUNT HTML files"
+          [ "$COUNT" -gt 5 ]
