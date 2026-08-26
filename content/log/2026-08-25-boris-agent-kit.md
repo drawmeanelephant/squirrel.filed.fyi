@@ -1,6 +1,6 @@
 ---
 title: Boris agent kit
-parent: log/index
+parent: log/2026-08
 tags: [link, meta]
 status: published
 published_at: 2026-08-25T12:00:00Z

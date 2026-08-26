@@ -1,6 +1,6 @@
 ---
 title: Inpatient (Ren x Chris Webby) — Asylum, full album
-parent: log/index
+parent: log/2026-08
 tags: [link, music]
 status: published
 published_at: 2026-08-25T12:00:00Z
