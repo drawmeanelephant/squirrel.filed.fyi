@@ -13,8 +13,6 @@ concurrency:
   cancel-in-progress: true
 
 env:
-  BORIS_COMMIT: a8ef247eca407384081ac9d016981df5caa3087f
-  ZIG_VERSION: 0.16.0
   SITE_URL: https://squirrel.filed.fyi/
 
 jobs:
@@ -24,39 +22,8 @@ jobs:
       - name: Checkout site
         uses: actions/checkout@v5
 
-      - name: Checkout boris at pinned commit
-        uses: actions/checkout@v5
-        with:
-          repository: drawmeanelephant/boris
-          ref: ${{ env.BORIS_COMMIT }}
-          path: boris-src
-
-      - name: Install Zig ${{ env.ZIG_VERSION }}
-        run: |
-          case "$(uname -m)" in
-            x86_64) ZIG_TARGET=x86_64-linux ;;
-            aarch64 | arm64) ZIG_TARGET=aarch64-linux ;;
-            *) echo "unsupported arch: $(uname -m)" >&2; exit 1 ;;
-          esac
-          # resolve the exact tarball from ziglang.org's index — artifact
-          # naming changed across Zig releases, the index is the contract
-          curl --fail --silent --show-error --location --output /tmp/zig-index.json \
-            "https://ziglang.org/download/index.json"
-          URL="$(python3 -c "import json; print(json.load(open('/tmp/zig-index.json'))['${ZIG_VERSION}']['${ZIG_TARGET}']['tarball'])")"
-          echo "zig tarball: $URL"
-          curl --fail --silent --show-error --location --output /tmp/zig.tar.xz "$URL"
-          mkdir -p /tmp/zig
-          tar -xJf /tmp/zig.tar.xz --strip-components=1 -C /tmp/zig
-          echo "/tmp/zig" >> "$GITHUB_PATH"
-
-      - name: Build boris
-        run: |
-          cd boris-src
-          zig build
-          BIN="$(find zig-out -type f -name boris | head -n1)"
-          test -n "$BIN" || { echo "boris binary not found after build" >&2; exit 1; }
-          "$BIN" --version
-          echo "BORIS_BIN=$GITHUB_WORKSPACE/boris-src/$BIN" >> "$GITHUB_ENV"
+      - name: Set up boris
+        uses: ./.github/actions/setup-boris
 
       - name: Build site
         run: |
