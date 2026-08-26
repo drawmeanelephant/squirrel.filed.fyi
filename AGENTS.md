@@ -27,7 +27,13 @@ dist/               build output, git-ignored
 
 ## Toolchain
 
-Binaries live in `boris-agent-kit/bin/` (Darwin-arm64 only). `boris`
+Binaries live in `boris-agent-kit/bin/` (Darwin-arm64 only) — a snapshot
+taken for initial setup that may lag boris main. The live toolchain is
+source at `~/t3/zig/boris`; `boris-refresh` (on PATH) pulls origin/main,
+rebuilds with Zig, and installs to `~/.local/bin/boris`. CI always
+builds the commit pinned in `.github/actions/setup-boris/action.yml`.
+Prefer `~/.local/bin/boris` when fresh; fall back to the kit if the
+checkout is unavailable. `boris`
 is the compiler; the rest are specialist tools (`boris-search-index`,
 `boris-content-audit`, ...) you almost never need directly.
 

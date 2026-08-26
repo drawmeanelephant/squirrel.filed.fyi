@@ -1,0 +1,51 @@
+name: 'Set up boris'
+description: 'Checkout and build boris at the pinned commit with Zig 0.16.0'
+
+inputs:
+  boris-commit:
+    description: 'boris commit to build — single source of truth for the whole repo'
+    required: false
+    default: '4a1ff01c4b6a40f5578f4475c73b65ea6340737d'
+  zig-version:
+    description: 'Zig toolchain version'
+    required: false
+    default: '0.16.0'
+
+runs:
+  using: composite
+  steps:
+    - name: Checkout boris at pinned commit
+      uses: actions/checkout@v5
+      with:
+        repository: drawmeanelephant/boris
+        ref: ${{ inputs.boris-commit }}
+        path: boris-src
+
+    - name: Install Zig
+      shell: bash
+      run: |
+        case "$(uname -m)" in
+          x86_64) ZIG_TARGET=x86_64-linux ;;
+          aarch64 | arm64) ZIG_TARGET=aarch64-linux ;;
+          *) echo "unsupported arch: $(uname -m)" >&2; exit 1 ;;
+        esac
+        # resolve the exact tarball from ziglang.org's index — artifact
+        # naming changed across Zig releases, the index is the contract
+        curl --fail --silent --show-error --location --output /tmp/zig-index.json \
+          "https://ziglang.org/download/index.json"
+        URL="$(python3 -c "import json; print(json.load(open('/tmp/zig-index.json'))['${{ inputs.zig-version }}']['${ZIG_TARGET}']['tarball'])")"
+        echo "zig tarball: $URL"
+        curl --fail --silent --show-error --location --output /tmp/zig.tar.xz "$URL"
+        mkdir -p /tmp/zig
+        tar -xJf /tmp/zig.tar.xz --strip-components=1 -C /tmp/zig
+        echo "/tmp/zig" >> "$GITHUB_PATH"
+
+    - name: Build boris
+      shell: bash
+      run: |
+        cd boris-src
+        zig build
+        BIN="$(find zig-out -type f -name boris | head -n1)"
+        test -n "$BIN" || { echo "boris binary not found after build" >&2; exit 1; }
+        "$BIN" --version
+        echo "BORIS_BIN=$GITHUB_WORKSPACE/boris-src/$BIN" >> "$GITHUB_ENV"
