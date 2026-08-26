@@ -1,6 +1,6 @@
 ---
 title: Pi Livecraft — the agent rebuilds its own cockpit
-parent: log/index
+parent: log/2026-08
 tags: [link, ai, dev]
 status: draft
 summary: A web UI for the Pi coding agent that the agent hot-reloads and reshapes while you use it. Forks are expected to drift. The docs are written for the model first.
