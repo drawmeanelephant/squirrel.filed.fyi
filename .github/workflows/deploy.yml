@@ -13,7 +13,7 @@ concurrency:
   cancel-in-progress: true
 
 env:
-  BORIS_COMMIT: a8ef247eca407384081ac9d016981df5caa3087f
+  BORIS_COMMIT: 4a1ff01c4b6a40f5578f4475c73b65ea6340737d
   ZIG_VERSION: 0.16.0
   SITE_URL: https://squirrel.filed.fyi/
 
