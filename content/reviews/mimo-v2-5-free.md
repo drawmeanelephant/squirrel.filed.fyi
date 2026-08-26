@@ -2,8 +2,9 @@
 title: MiMo-V2.5 Free (opencode model)
 parent: reviews/index
 tags: [review, ai, xiaomi, open-source]
-status: draft
+status: published
 summary: The free-tier Xiaomi model powering this agent — 310B sparse MoE, 15B active, native vision, and zero dollars per token.
+published_at: 2026-08-26T12:00:00Z
 ---
 
 # MiMo-V2.5 Free
