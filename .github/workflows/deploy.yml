@@ -27,14 +27,14 @@ jobs:
 
       - name: Build site
         run: |
-          "$BORIS_BIN" build --input content --html-dir dist \
+          boris build --input content --html-dir dist \
             --theme lab --sitemap --site-url "$SITE_URL" \
             --layout-rule default id:index lab/layouts/trunk.html
           test -f dist/index.html
 
       - name: Emit RSS feed
         run: |
-          "$BORIS_BIN" build --input content --rss --rss-path dist/rss.xml \
+          boris build --input content --rss --rss-path dist/rss.xml \
             --site-url "$SITE_URL" \
             --rss-title "squirrel.filed.fyi" \
             --rss-description "Links, Mac software, AI reviews, and relics — filed, not forgotten."
