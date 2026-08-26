@@ -1,6 +1,6 @@
 ---
 title: Ali — The Turkish Companion
-parent: log/index
+parent: log/2026-08
 tags: [link, ai]
 status: published
 published_at: 2026-08-25T18:30:00Z

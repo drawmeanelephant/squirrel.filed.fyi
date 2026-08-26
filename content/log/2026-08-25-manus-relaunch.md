@@ -1,6 +1,6 @@
 ---
 title: Manus relaunches — the $2B Meta deal China shredded
-parent: log/index
+parent: log/2026-08
 tags: [link, ai]
 status: published
 published_at: 2026-08-25T19:30:00Z
