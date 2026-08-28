@@ -4,7 +4,7 @@ parent: log/2026-08
 tags: [link, doomed-ai, openai]
 status: published
 published_at: 2026-08-26T17:31:00Z
-relations: [relates_to=tech/doomed-ai, relates_to=log/2026-08-26-dia-browser]
+relations: [relates_to=doomed-ai/index, relates_to=log/2026-08-26-dia-browser]
 summary: OpenAI shipped a browser in October 2025 and shut it down August 9, 2026 — a "side quest" casualty with a ten-month lifespan and non-transferring bookmarks.
 ---
 

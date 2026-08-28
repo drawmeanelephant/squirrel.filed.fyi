@@ -4,7 +4,7 @@ parent: log/2026-08
 tags: [link, doomed-ai, openai, altman]
 status: published
 published_at: 2026-08-28T12:00:00Z
-relations: [relates_to=tech/doomed-ai]
+relations: [relates_to=doomed-ai/index]
 summary: When asked about the Altman sister lawsuit, ChatGPT called it "exaggeration/drama" and "rumor-mill jab" — it's a formal civil lawsuit filed in Missouri federal court. ChatGPT kept using "gossip" even after being corrected multiple times.
 ---
 

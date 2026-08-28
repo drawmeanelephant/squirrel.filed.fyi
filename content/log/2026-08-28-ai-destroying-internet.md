@@ -4,7 +4,7 @@ parent: log/2026-08
 tags: [link, doomed-ai, ai, internet, spam]
 status: published
 published_at: 2026-08-28T12:00:00Z
-relations: [relates_to=tech/doomed-ai]
+relations: [relates_to=doomed-ai/index]
 summary: AI job loss research focuses on high-minded work applications while ignoring the real damage — AI flooding the internet with spam, fake content, and deepfake porn, burying legitimate creators and trashing trust in everything online.
 ---
 
