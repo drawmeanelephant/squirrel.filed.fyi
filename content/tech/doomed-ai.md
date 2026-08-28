@@ -61,5 +61,22 @@ Transformation.
   ignores the real damage: AI flooding the internet with spam, fake
   content, and deepfake porn, burying legitimate creators and trashing
   trust in everything online.
+- [[log/2026-08-28-cursor-doomed]] — $29B valuation, $1-2B revenue,
+  likely burning close to that. "I'm not seeing where they are making
+  money without outside investment." Also: ChatGPT hallucinated a
+  monopoly claim about OpenAI and got caught.
+- [[log/2026-08-28-perplexity-doomed]] — voted "most likely to fail"
+  by founders and investors. Copyright lawsuits from NYT and Chicago
+  Tribune, Amazon injunction blocking shopping features, thin margins.
+- [[log/2026-08-28-altman-sister-lawsuit]] — ChatGPT dismissed Sam
+  Altman's sister's federal court filing as "gossip" and
+  "rumor-mill jab." It wasn't. ChatGPT kept using "gossip" even
+  after being corrected multiple times.
+- [[log/2026-08-28-parameter-golf]] — OpenAI crowdsources prompt
+  optimization as a "fun challenge." The prize: leaderboard clout
+  and maybe a Chipotle gift card. The value: six-figure compute
+  savings at scale.
+- [[log/2026-08-28-grok-420-beta]] — multi-agent debate architecture
+  that still hallucinates. Interesting concept, hostile execution.
 
 More where that came from. The bucket has room.
