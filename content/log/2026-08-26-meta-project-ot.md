@@ -4,7 +4,7 @@ parent: log/2026-08
 tags: [link, doomed-ai, meta]
 status: published
 published_at: 2026-08-26T12:04:35Z
-relations: [relates_to=tech/doomed-ai]
+relations: [relates_to=doomed-ai/index]
 summary: Reuters got the internal docs — Meta planned 60% team cuts across two waves, the agents delivered +220% code churn and +36% features, and Zuckerberg called off wave two hours before wave one.
 ---
 

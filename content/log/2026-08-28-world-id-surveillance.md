@@ -4,7 +4,7 @@ parent: log/2026-08
 tags: [link, doomed-ai, world-id, surveillance, crypto]
 status: published
 published_at: 2026-08-28T12:00:00Z
-relations: [relates_to=tech/doomed-ai]
+relations: [relates_to=doomed-ai/index]
 summary: World ID wants every AI agent tied to a cryptographically unique human ID — surveillance infrastructure masquerading as safety, with the enforcement problem no one can solve.
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Doomed AI
-parent: tech/index
-tags: [doomed-ai, series]
+parent: index
+tags: [doomed-ai, series, bucket]
 status: published
 summary: Companies that bet the org chart on agents before checking whether agents can do the job — a running series.
 ---
@@ -18,6 +18,9 @@ Ground rules, learned from the material itself: consent matters more
 than capability claims, internal metrics beat press releases, and
 nobody has ever been saved by calling it an Organization
 Transformation.
+
+AI isn't tech. It's mostly someone else's work with a UI bolted on.
+This bucket tracks the companies proving that point daily.
 
 ## The series so far
 

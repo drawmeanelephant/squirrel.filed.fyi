@@ -4,7 +4,7 @@ parent: log/2026-08
 tags: [link, doomed-ai, nvidia, openai, anthropic]
 status: published
 published_at: 2026-08-28T12:00:00Z
-relations: [relates_to=tech/doomed-ai]
+relations: [relates_to=doomed-ai/index]
 summary: Jensen Huang says Nvidia probably won't invest more in OpenAI or Anthropic. The real story: $25B revenue but $14B losses at OpenAI, and the shovel seller decided it doesn't need equity when everyone's buying GPUs anyway.
 ---
 

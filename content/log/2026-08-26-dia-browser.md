@@ -4,7 +4,7 @@ parent: log/2026-08
 tags: [link, doomed-ai, browsers]
 status: published
 published_at: 2026-08-26T17:32:00Z
-relations: [relates_to=tech/doomed-ai, relates_to=log/2026-08-26-atlas-browser]
+relations: [relates_to=doomed-ai/index, relates_to=log/2026-08-26-atlas-browser]
 summary: Atlassian bought The Browser Company for $610M to turn the quirky AI browser into enterprise software; Arc is in maintenance mode and Dia Pro was quietly euthanized in May.
 ---
 

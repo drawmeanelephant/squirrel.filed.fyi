@@ -4,7 +4,7 @@ parent: log/2026-08
 tags: [link, doomed-ai, perplexity, search]
 status: published
 published_at: 2026-08-28T12:00:00Z
-relations: [relates_to=tech/doomed-ai]
+relations: [relates_to=doomed-ai/index]
 summary: At industry events, Perplexity was voted "most likely to fail" by founders and investors. Copyright lawsuits from NYT and Chicago Tribune, Amazon injunction blocking shopping features, and a business model with questionable margins.
 ---
 
