@@ -41,5 +41,25 @@ Transformation.
   a nonexistent thinktank publishes half a million words in nine days
   to groom chatbots, the chatbots oblige, the humans don't budge, and
   the patrons' own officials call it a hoax on the scale of Pollard.
+- [[log/2026-08-28-xai-doom-analysis]] — nine of twelve co-founders
+  gone, Grok generating offensive deepfakes, no enterprise traction,
+  and Musk personally mediating product behavior. "A sidecar experiment
+  duct-taped to a struggling social network."
+- [[log/2026-08-28-nvidia-pulling-back]] — Nvidia stops investing in
+  OpenAI and Anthropic. The shovel seller looked at OpenAI's $14B
+  annual losses and decided selling GPUs was a better deal than
+  owning equity.
+- [[log/2026-08-28-world-id-surveillance]] — World ID wants every AI
+  agent tied to a cryptographically unique human ID. Surveillance
+  infrastructure masquerading as safety, with the enforcement problem
+  no one can solve.
+- [[log/2026-08-28-federal-cybersecurity-microsoft]] — federal cyber
+  experts called Microsoft's government cloud "a pile of shit" with
+  poor documentation and unknown security gaps. FedRAMP approved it
+  anyway because Microsoft is too embedded to walk away from.
+- [[log/2026-08-28-ai-destroying-internet]] — AI job loss research
+  ignores the real damage: AI flooding the internet with spam, fake
+  content, and deepfake porn, burying legitimate creators and trashing
+  trust in everything online.
 
 More where that came from. The bucket has room.
