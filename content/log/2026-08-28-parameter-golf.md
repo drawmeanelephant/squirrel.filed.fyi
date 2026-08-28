@@ -4,7 +4,7 @@ parent: log/2026-08
 tags: [link, doomed-ai, openai, labor]
 status: published
 published_at: 2026-08-28T12:00:00Z
-relations: [relates_to=tech/doomed-ai]
+relations: [relates_to=doomed-ai/index]
 summary: OpenAI's "Parameter Golf" challenge asks people to shrink prompts while keeping performance high — genuine cost savings for OpenAI at scale, rewarded with leaderboard clout and maybe a Chipotle gift card.
 ---
 

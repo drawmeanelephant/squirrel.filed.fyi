@@ -4,7 +4,7 @@ parent: log/2026-08
 tags: [link, doomed-ai, microsoft, federal, cybersecurity]
 status: published
 published_at: 2026-08-28T12:00:00Z
-relations: [relates_to=tech/doomed-ai]
+relations: [relates_to=doomed-ai/index]
 summary: FedRAMP approved Microsoft's Government Community Cloud High for sensitive government data despite expert reviewers privately describing it as "a pile of shit" with poor documentation, legacy complexity, and unknown security gaps.
 ---
 

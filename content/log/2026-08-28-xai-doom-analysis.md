@@ -4,7 +4,7 @@ parent: log/2026-08
 tags: [link, doomed-ai, xai, grok, musk]
 status: published
 published_at: 2026-08-28T12:00:00Z
-relations: [relates_to=tech/doomed-ai]
+relations: [relates_to=doomed-ai/index]
 summary: Nine of twelve co-founders gone, Grok generating offensive deepfakes, no enterprise traction, and Musk personally mediating product behavior — xAI has all the classic failure signals and none of the unit economics.
 ---
 

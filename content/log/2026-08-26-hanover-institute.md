@@ -4,7 +4,7 @@ parent: log/2026-08
 tags: [link, doomed-ai, propaganda]
 status: published
 published_at: 2026-08-26T17:33:00Z
-relations: [relates_to=tech/doomed-ai]
+relations: [relates_to=doomed-ai/index]
 summary: A fake thinktank with no legal existence published 560,000 words in nine days to game chatbot answers, funded through $15M of Israeli government money — and by its own patrons' account, failed anyway.
 ---
 
