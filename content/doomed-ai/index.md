@@ -81,5 +81,10 @@ This bucket tracks the companies proving that point daily.
   savings at scale.
 - [[log/2026-08-28-grok-420-beta]] — multi-agent debate architecture
   that still hallucinates. Interesting concept, hostile execution.
+- [[log/2026-08-28-ai-ruining-sf]] — the extraction finally has a zip
+  code: rents up 14% this year, half the population displaced, and
+  OpenAI counting under $1M in civic contributions as its gift to the
+  city its mission says it'll benefit. Rockefeller gave New York a
+  plaza; OpenAI gave SF a tax bill.
 
 More where that came from. The bucket has room.
