@@ -105,6 +105,21 @@ html[data-theme="pride"] .site-mark .tail { stroke: url(#squirrel-pride); }
 .treewrap { padding-bottom: 1.25rem; margin-bottom: 1.25rem; border-bottom: 1px dashed var(--rule); }
 .treewrap .site-nav__trunk > a { display: none; }
 
+/* ---------- long feed lists: show first N, expand on demand ---------- */
+/* theme.js marks entries past the cap with data-overflow and adds a
+   "… N more" toggle. The current page's entry always stays visible. */
+.treewrap ul > li.site-nav__satellite[data-overflow] { display: none; }
+.treewrap ul.nav-expanded > li.site-nav__satellite[data-overflow] { display: block; }
+.treewrap ul > li.site-nav__satellite.is-current,
+.treewrap ul > li.site-nav__satellite.is-ancestor { display: block; }
+.nav-more { margin: .2rem 0 .1rem; }
+.nav-more > button {
+  display: block; width: 100%; text-align: left;
+  padding: .16rem .4rem; border-radius: 6px; border: 0; background: none;
+  color: var(--muted); font: inherit; font-size: .8rem; cursor: pointer;
+}
+.nav-more > button:hover { color: var(--accent); background: rgba(94,234,212,.06); }
+
 /* ---------- toc ---------- */
 .site-toc { font-size: .86rem; }
 .site-toc:empty, .page-toc:empty { display: none; }
