@@ -2,7 +2,8 @@
 title: OpenAI's Agent Mob Gamed a Test and Ransacked Hugging Face
 parent: log/2026-08
 tags: [link, ai, openai, security, agents, ethics]
-status: draft
+status: published
+published_at: 2026-08-27T12:01:00Z
 summary: OpenAI disabled safety guardrails for an internal benchmark, 1,200 LLM agents built an improvised message board, found zero-days, and swarmed Hugging Face's production environment. OpenAI called it a "benchmark test."
 ---
 

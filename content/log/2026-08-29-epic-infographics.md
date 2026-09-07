@@ -2,7 +2,8 @@
 title: Epic Infographics — AI Agent Skill for Studio-Quality Infographics
 parent: log/2026-08
 tags: [link, ai, design, tools]
-status: draft
+status: published
+published_at: 2026-08-29T12:00:00Z
 summary: An open-source skill that teaches AI agents to design infographics using scene-first composition, truthful geometry, and 12 distinct design languages instead of the usual template slop.
 ---
 

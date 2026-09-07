@@ -3,6 +3,7 @@ title: Commodore 64 Ultimate — Cyberpunk 2077 Edition
 parent: log/2026-08
 tags: [link, retro, commodore, fpga, hardware]
 status: published
+published_at: 2026-08-27T12:02:00Z
 summary: The C64 is back — FPGA-based, original SID sockets, modern I/O, and a Cyberpunk 2077 breadbin variant that goes hard.
 relations: [relates_to=tech/commodore-64-ultimate]
 ---

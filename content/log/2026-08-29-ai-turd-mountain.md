@@ -4,6 +4,7 @@ parent: log/2026-08
 tags: [link, tech, humor]
 relations: [relates_to=tech/ai-turd-mountain]
 status: published
+published_at: 2026-08-29T12:03:00Z
 summary: Doomsday Scenario's Garrett Graff nails the problem: AI arrived as a turd mountain nobody asked for, pushed by the worst people, making everything worse. Meanwhile boosters are confused why the public isn't grateful.
 ---
 

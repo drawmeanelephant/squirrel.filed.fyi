@@ -2,7 +2,8 @@
 title: AI Agents Are Installing Unowned Code From Documentation Files
 parent: log/2026-08
 tags: [link, security, ai, supply-chain, prompt-injection]
-status: draft
+status: published
+published_at: 2026-08-27T12:00:00Z
 summary: Coding agents treated llms.txt files as authoritative setup docs, installed unregistered packages from PyPI/npm — 227 commands across 100+ sites, including Fortune 500s. One site already had live malware.
 ---
 

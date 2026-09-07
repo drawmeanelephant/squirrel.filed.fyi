@@ -4,6 +4,7 @@ parent: log/2026-08
 tags: [link, tech, humor]
 relations: [relates_to=tech/sf-ai-billboards]
 status: published
+published_at: 2026-08-29T12:04:00Z
 summary: San Francisco's AI billboards have become so incomprehensible they've accidentally pioneered nihilist advertising — a city-wide PSYOP that says "the future is meaningless, and you're not invited."
 ---
 

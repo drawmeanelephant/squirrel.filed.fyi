@@ -3,6 +3,7 @@ title: Altman Admits People Hate Data Centers as His Data Center Guy Quits
 parent: log/2026-08
 tags: [link, tech, humor, openai]
 status: published
+published_at: 2026-08-29T12:05:00Z
 relations: [relates_to=tech/ai-turd-mountain, relates_to=tech/ghost-gdp]
 summary: Sam Altman concedes "people hate data centers" in a Time interview. Days earlier, OpenAI's head of data centers Chris Malone quit. 7 in 10 Americans oppose data centers nearby.
 ---
