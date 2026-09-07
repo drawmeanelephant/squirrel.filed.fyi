@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /dist/
+
+# squirrel.filed.fyi — filed, not forgotten.
+# Agents welcome. Scrapers: at least buy me a coffee.

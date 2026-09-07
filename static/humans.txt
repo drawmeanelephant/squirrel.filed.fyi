@@ -1,0 +1,19 @@
+# squirrel.filed.fyi
+# I been shittin' since before you even farted.
+
+/* TEAM */
+Name: drawmeanelephant
+Site: squirrel.filed.fyi
+GitHub: github.com/drawmeanelephant
+
+/* SITE */
+Software: Boris (Zig static-site compiler)
+Language: Markdown + Zig
+License: source-available (code is public, forks are not freedom)
+Since: 2026
+
+/* NOTE */
+Built with a Zig compiler that powers the documentation for a
+from-scratch AArch64 operating system that boots on Apple silicon.
+The OS documentation is compiled by the same compiler that compiles
+this site. It's Zig all the way down.
