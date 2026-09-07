@@ -30,7 +30,8 @@ jobs:
         run: |
           boris build --input content --html-dir dist \
             --theme lab --sitemap --site-url https://squirrel.filed.fyi/ \
-            --layout-rule default id:index lab/layouts/trunk.html
+            --layout-rule default id:index lab/layouts/trunk.html \
+            --static-dir static
       - name: Build RSS
         run: |
           boris build --input content --rss --rss-path dist/rss.xml \
@@ -51,9 +52,13 @@ jobs:
         run: |
           boris build --input content --html-dir dist \
             --theme lab --sitemap --site-url https://squirrel.filed.fyi/ \
-            --layout-rule default id:index lab/layouts/trunk.html
+            --layout-rule default id:index lab/layouts/trunk.html \
+            --static-dir static
       - name: Check dist has content
         run: |
           COUNT=$(find dist -name '*.html' | wc -l)
           echo "Generated $COUNT HTML files"
           [ "$COUNT" -gt 5 ]
+          test -f dist/robots.txt
+          test -f dist/humans.txt
+          test -f dist/cyborgs.txt

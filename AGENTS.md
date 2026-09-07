@@ -33,7 +33,9 @@ source at `~/t3/zig/boris`; `boris-refresh` (on PATH) pulls origin/main,
 rebuilds with Zig, and installs to `~/.local/bin/boris`. CI always
 builds the commit pinned in `.github/actions/setup-boris/action.yml`.
 Prefer `~/.local/bin/boris` when fresh; fall back to the kit if the
-checkout is unavailable. `boris`
+checkout is unavailable. Note: the kit snapshot (0.8.1) predates the
+`--static-dir` flag (#804), so the build commands below use `boris`
+from PATH. `boris`
 is the compiler; the rest are specialist tools (`boris-search-index`,
 `boris-content-audit`, ...) you almost never need directly.
 
@@ -46,11 +48,12 @@ cd boris-agent-kit && shasum -a 256 -c SHA256SUMS
 Core commands (run from repo root):
 
 ```sh
-# full build: HTML + search index + sitemap into dist/
+# full build: HTML + search index + sitemap + static/ into dist/
 # (trunk layout rule keeps the homepage <title> free of the site suffix)
-./boris-agent-kit/bin/boris build --input content --html-dir dist \
+boris build --input content --html-dir dist \
   --theme lab --sitemap --site-url https://squirrel.filed.fyi/ \
-  --layout-rule default id:index lab/layouts/trunk.html
+  --layout-rule default id:index lab/layouts/trunk.html \
+  --static-dir static
 
 # RSS feed — separate mode, run after the HTML build.
 # Items require `status: published` + `summary` + `published_at`.
@@ -60,15 +63,15 @@ Core commands (run from repo root):
   --rss-description "Links, Mac software, AI reviews, and relics — filed, not forgotten."
 
 # zero-write preflight — run this before declaring any task done
-./boris-agent-kit/bin/boris validate --input content --theme lab \
-  --layout-rule default id:index lab/layouts/trunk.html
+boris validate --input content --theme lab \
+  --layout-rule default id:index lab/layouts/trunk.html --static-dir static
 
 # read-only graph health report
 ./boris-agent-kit/bin/boris check --input content
 
 # rebuild on save, serve on loopback :8090
-./boris-agent-kit/bin/boris watch --input content --html-dir dist \
-  --theme lab --serve
+boris watch --input content --html-dir dist \
+  --theme lab --serve --static-dir static
 
 # offline corpus export so an agent can reason over the whole site
 ./boris-agent-kit/bin/boris build --input content --rag --complete

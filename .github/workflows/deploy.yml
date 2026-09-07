@@ -29,8 +29,10 @@ jobs:
         run: |
           boris build --input content --html-dir dist \
             --theme lab --sitemap --site-url "$SITE_URL" \
-            --layout-rule default id:index lab/layouts/trunk.html
+            --layout-rule default id:index lab/layouts/trunk.html \
+            --static-dir static
           test -f dist/index.html
+          test -f dist/robots.txt
 
       - name: Emit RSS feed
         run: |
