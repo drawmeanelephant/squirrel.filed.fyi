@@ -2,7 +2,8 @@
 title: Apex Markdown processor
 parent: log/2026-08
 tags: [link, markdown, dev]
-status: draft
+status: published
+published_at: 2026-08-25T12:01:00Z
 summary: Brett Terpstra's unified Markdown processor in C — one CLI that speaks CommonMark, GFM, MultiMarkdown, Kramdown, and Marked at once.
 ---
 

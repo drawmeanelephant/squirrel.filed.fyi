@@ -5,7 +5,7 @@ inputs:
   boris-commit:
     description: 'boris commit to build — single source of truth for the whole repo'
     required: false
-    default: '675ef9adf8f7661e8ea2919e57222dcc7dc25269'
+    default: '5ef49ae2c7fcdc11cac907fecebf51ea8c3fd54b'
   zig-version:
     description: 'Zig toolchain version'
     required: false

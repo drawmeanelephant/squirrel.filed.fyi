@@ -2,7 +2,8 @@
 title: ChatGPT Now Signs Into Your Accounts and Keeps the Sessions on Its Servers
 parent: log/2026-08
 tags: [link, doomed-ai, openai, security, privacy, national-security]
-status: draft
+status: published
+published_at: 2026-08-28T12:01:00Z
 summary: ChatGPT Work's cloud browser can now sign into websites and keeps the session cookie on OpenAI's servers — even after you close your device. A stolen cookie is enough to hijack an account without the password or 2FA. Red Scare 3.0: the national security framing is the subsidy play.
 ---
 

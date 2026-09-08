@@ -3,6 +3,7 @@ title: God's Eye View — Live OSINT on a 3D Globe
 parent: log/2026-08
 tags: [link, dev, osint, geospatial, visualization, web]
 status: published
+published_at: 2026-08-27T12:04:00Z
 summary: A spy-satellite simulator in your browser with real data — live aircraft, ships, satellites, earthquakes, CCTV, and voice control, all from public feeds.
 relations: [relates_to=dev/gods-eye-view]
 ---
