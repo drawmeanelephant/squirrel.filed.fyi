@@ -2,8 +2,9 @@
 title: ChatGPT Conversations Are Showing Up in Court — and They're Not Protected
 parent: log/2026-08
 tags: [link, chatgpt, privacy, law, openai, ai]
-status: draft
+status: published
 summary: Your chatbot conversations can be subpoenaed, found on your phone, or reported by OpenAI — and they get zero legal privilege.
+published_at: 2026-08-31T12:00:00Z
 ---
 
 # ChatGPT Conversations Are Showing Up in Court

@@ -2,7 +2,7 @@
 title: "Boris + CookLang: Recipe Workflow"
 parent: dev/index
 tags: [dev, boris, cooklang, recipes, zig]
-status: draft
+status: published
 summary: How to write, build, and scale CookLang recipes with boris — the good parts and the constraints.
 ---
 

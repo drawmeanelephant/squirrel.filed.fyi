@@ -2,8 +2,9 @@
 title: Dolly Parton's Coleslaw
 parent: log/2026-08
 tags: [link, recipe, southern, coleslaw, potluck]
-status: draft
+status: published
 summary: Pickle juice adds a special tang — Dolly's coleslaw from Cooking With Country Music Stars (1986).
+published_at: 2026-08-30T12:00:00Z
 ---
 
 # Dolly Parton's Coleslaw
