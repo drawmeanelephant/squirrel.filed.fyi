@@ -2,7 +2,7 @@
 title: The Omni Group
 parent: mac/index
 tags: [review, mac, omni]
-status: draft
+status: published
 summary: Thirty-plus years of Cocoa productivity software — OmniFocus, OmniGraffle, OmniOutliner, OmniPlan — and the rare company that survived them all.
 ---
 

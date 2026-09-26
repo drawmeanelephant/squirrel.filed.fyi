@@ -2,8 +2,10 @@
 title: "id's Former Co-Owner Says They'd Absolutely Have Used Gen AI Back in the Day — 'Carmack Would Be Like Making Skynet or Something'"
 parent: log/2026-08
 tags: [link, tech, games, ai]
-status: draft
+status: published
 summary: "Tim Willits, id Software's former studio director and co-owner, tells PC Gamer id would've jumped on gen AI back in the day — and jokes John Carmack would've pushed it all the way to Skynet."
+published_at: 2026-08-30T12:00:00Z
+relations: [relates_to=tech/id-software-gen-ai]
 ---
 
 # id's Former Co-Owner Says They'd Absolutely Have Used Gen AI Back in the Day

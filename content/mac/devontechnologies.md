@@ -2,7 +2,7 @@
 title: DEVONtechnologies
 parent: mac/index
 tags: [review, mac, devon, pkm]
-status: draft
+status: published
 summary: DEVONthink and friends — a German shop that shipped local machine-learning document tools two decades before it was a funding round.
 ---
 
