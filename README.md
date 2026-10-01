@@ -16,17 +16,27 @@ compiler with a validated page graph, deployed to Cloudflare Pages.
 
 ## Local build
 
+The commands below mirror what CI runs, so use `boris` from PATH (the
+`boris-agent-kit` snapshot predates `--static-dir`).
+
 ```sh
-./boris-agent-kit/bin/boris build --input content --html-dir dist \
+boris build --input content --html-dir dist \
   --theme lab --sitemap --site-url https://squirrel.filed.fyi/ \
-  --layout-rule default id:index lab/layouts/trunk.html
+  --layout-rule default id:index lab/layouts/trunk.html \
+  --static-dir static
 ```
+
+The trunk layout rule keeps the homepage `<title>` free of the site
+suffix; `--static-dir static` ships `robots.txt`, `humans.txt`, and
+`cyborgs.txt` into `dist/`.
 
 Or watch + serve on loopback:
 
 ```sh
-./boris-agent-kit/bin/boris watch --input content --html-dir dist \
-  --theme lab --serve
+boris watch --input content --html-dir dist \
+  --theme lab --serve \
+  --layout-rule default id:index lab/layouts/trunk.html \
+  --static-dir static
 ```
 
 ## Deployment
