@@ -71,7 +71,9 @@ boris validate --input content --theme lab \
 
 # rebuild on save, serve on loopback :8090
 boris watch --input content --html-dir dist \
-  --theme lab --serve --static-dir static
+  --theme lab --serve \
+  --layout-rule default id:index lab/layouts/trunk.html \
+  --static-dir static
 
 # offline corpus export so an agent can reason over the whole site
 ./boris-agent-kit/bin/boris build --input content --rag --complete
