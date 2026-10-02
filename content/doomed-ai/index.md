@@ -86,5 +86,9 @@ This bucket tracks the companies proving that point daily.
   OpenAI counting under $1M in civic contributions as its gift to the
   city its mission says it'll benefit. Rockefeller gave New York a
   plaza; OpenAI gave SF a tax bill.
+- [[log/2026-10-02-nvidia-chip-smuggling]] — the DOJ arrested a CEO
+  for allegedly smuggling $300M in Nvidia A100/H100 servers into China
+  via Malaysia and Singapore from 2023 to 2026. The fake buyer's CEO
+  was named "Jackie Lui." Nvidia calls it a drop in the bucket.
 
 More where that came from. The bucket has room.
