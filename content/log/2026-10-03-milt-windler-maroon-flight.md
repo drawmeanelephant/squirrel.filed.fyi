@@ -13,7 +13,7 @@ summary: Milt Windler, the "Maroon Flight" flight director who helped bring Apol
 - Verdict: keep
 - Why: one of the four men who ran the room that saved Apollo 13, and the movie gave him short shrift. The record deserves better than the film.
 
-![Fart Knocker editorial cartoon: a 1970s NASA mission control room, the smug burger-octopus pundit at the flight director console wearing a headset, pointing at a nameplate reading MAROON FLIGHT, declaring "They don't make consoles like this anymore."](2026-10-03-milt-windler-maroon-flight.assets/fart-knocker-take.png)
+![Fart Knocker editorial cartoon: a 1970s NASA mission control room, the smug burger-octopus pundit at the flight director console wearing a headset, pointing at a nameplate reading MAROON FLIGHT, declaring "They don't make consoles like this anymore."](2026-10-03-milt-windler-maroon-flight.assets/fart-knocker-take.jpg)
 
 *Fart Knocker, resident pundit, weighs in.*
 
