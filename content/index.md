@@ -5,29 +5,25 @@ summary: A filing cabinet for links, Mac software, AI reviews, and dead software
 ---
 
 <figure class="venn">
-<svg viewBox="0 0 800 800" role="img" aria-label="Four-set Venn diagram: undiagnosed ADHD, undiagnosed autism, undiagnosed cannabis use disorder, and undiagnosed AI psychosis. The intersection in the center is squirrel dot filed dot fyi.">
-<g font-family="ui-monospace, 'SF Mono', Menlo, monospace">
-<ellipse cx="400" cy="400" rx="300" ry="105" transform="rotate(0 400 400)" fill="#5eead4" fill-opacity="0.09" stroke="#5eead4" stroke-opacity="0.5" stroke-width="1.5"/>
-<ellipse cx="400" cy="400" rx="300" ry="105" transform="rotate(45 400 400)" fill="#f0abfc" fill-opacity="0.09" stroke="#f0abfc" stroke-opacity="0.5" stroke-width="1.5"/>
-<ellipse cx="400" cy="400" rx="300" ry="105" transform="rotate(90 400 400)" fill="#7dd3fc" fill-opacity="0.09" stroke="#7dd3fc" stroke-opacity="0.5" stroke-width="1.5"/>
-<ellipse cx="400" cy="400" rx="300" ry="105" transform="rotate(135 400 400)" fill="#fbbf24" fill-opacity="0.09" stroke="#fbbf24" stroke-opacity="0.5" stroke-width="1.5"/>
-<g fill="var(--ink, #c9d4de)" font-size="21" text-anchor="middle">
-<text x="400" y="148">undiagnosed</text>
-<text x="400" y="174">ADHD</text>
-<text x="648" y="394">undiagnosed</text>
-<text x="648" y="420">autism</text>
-<text x="400" y="640">undiagnosed cannabis</text>
-<text x="400" y="666">use disorder</text>
-<text x="152" y="394">undiagnosed</text>
-<text x="152" y="420">AI psychosis</text>
+<svg viewBox="-10 8 820 724" role="img" aria-label="Four-set Venn diagram: undiagnosed ADHD, undiagnosed autism, undiagnosed cannabis use disorder, and undiagnosed AI psychosis. The intersection in the center is squirrel dot filed dot fyi.">
+<g class="venn-sets">
+<ellipse class="venn-a" cx="400" cy="400" rx="340" ry="105" transform="rotate(67.5 400 400)"/>
+<ellipse class="venn-b" cx="400" cy="400" rx="340" ry="105" transform="rotate(112.5 400 400)"/>
+<ellipse class="venn-c" cx="400" cy="400" rx="340" ry="105" transform="rotate(157.5 400 400)"/>
+<ellipse class="venn-d" cx="400" cy="400" rx="340" ry="105" transform="rotate(22.5 400 400)"/>
 </g>
-<g fill="var(--bright, #eef4fa)" font-size="31" font-weight="700" text-anchor="middle" letter-spacing="1">
-<text x="400" y="336">squirrel</text>
-<text x="400" y="368">dot</text>
-<text x="400" y="400">filed</text>
-<text x="400" y="432">dot</text>
-<text x="400" y="464">fyi</text>
+<g class="venn-labels" text-anchor="middle">
+<text class="venn-a" x="258" y="62"><tspan class="venn-un" x="258" dy="-30">undiagnosed</tspan><tspan x="258" dy="29">ADHD</tspan></text>
+<text class="venn-b" x="542" y="62"><tspan class="venn-un" x="542" dy="-30">undiagnosed</tspan><tspan x="542" dy="29">autism</tspan></text>
+<text class="venn-c" x="96" y="618"><tspan class="venn-un" x="96" dy="-30">undiagnosed</tspan><tspan x="96" dy="29">cannabis</tspan><tspan x="96" dy="29">use disorder</tspan></text>
+<text class="venn-d" x="704" y="618"><tspan class="venn-un" x="704" dy="-30">undiagnosed</tspan><tspan x="704" dy="29">AI psychosis</tspan></text>
 </g>
+<g class="venn-core" text-anchor="middle">
+<text x="400" y="364">squirrel</text>
+<text class="venn-dot" x="400" y="384">dot</text>
+<text x="400" y="413">filed</text>
+<text class="venn-dot" x="400" y="433">dot</text>
+<text x="400" y="462">fyi</text>
 </g>
 </svg>
 <figcaption>the intersection is the content strategy</figcaption>
